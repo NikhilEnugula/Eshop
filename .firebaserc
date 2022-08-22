@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "eshop-66a97": {
+      "hosting": {
+        "eshop": [
+          "eshop-66a97"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "eshop-66a97"
+  }
+}

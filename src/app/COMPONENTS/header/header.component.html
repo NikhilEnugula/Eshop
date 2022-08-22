@@ -1,0 +1,44 @@
+<div class="header">
+  <nav class="header_top">
+    <div class="header_menu">
+      <div class="header_menu_icon">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <h1 class="page_title" style="color: rgb(217, 226, 243)">E-Shop</h1>
+
+      <div class="header_menu_Searchbar">
+        <input type="text" class="header_menu_input" />
+
+        <div class="header_menu_searchbar_icon">
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
+
+      <div class="header_menu_signin" routerLink="/login">
+        <span class="header_menu_top_item"> Hello,Sign in </span>
+
+        <span class="header_menu_buttom_item">Accounts & Lists</span>
+      </div>
+
+      <div class="header_menu_signin" routerLink="/login">
+        <span class="header_menu_top_item"> Returns </span>
+
+        <span class="header_menu_buttom_item">& Orders</span>
+      </div>
+      <div class="header_menu_cart" routerLink="/checkout">
+        <i class="bi bi-cart3"></i>
+        <p class="head_cart_number">{{ shoppingCart.getCartLength() }}</p>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="header_buttom">
+    <div class="header_buttom_location_text">
+      <span class="header_left_line_one">Delivery to </span>
+      <span class="header_left_line_one">
+        <strong> <i class="bi bi-geo-alt-fill"></i> Hyderabad</strong>
+      </span>
+    </div>
+  </nav>
+</div>

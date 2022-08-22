@@ -1,0 +1,38 @@
+<div class="checkout_products">
+  <p class="price">Price</p>
+  <div class="checkout_product" *ngFor="let p of checkout_products">
+    <div class="checkout_product_image">
+      <img src="{{ p.image }}" alt="" class="checkout_product_img" />
+    </div>
+
+    <div class="checkout_product_info">
+      <p class="checkout_product_title">
+        {{ p.title }}
+      </p>
+      <p class="checkout_product_in_stock">In Stock</p>
+      <div class="checkout_product_gift">
+        <!-- <input type="checkbox" /> -->
+        <!-- <p>This is a gift</p> -->
+        <a routerLink="/" class="check_product_more">Learn more</a>
+      </div>
+      <div class="checkout_options">
+        <div class="checkout_dropdown"></div>
+        <a type="button" (click)="removeItem(p)">Delete</a>
+
+        <a href="#">Save it later</a>
+        <a href="#">Compare with similar items</a>
+      </div>
+    </div>
+    <div class="ckeckout_product_price">
+      <p>
+        <strong>₹{{ p.price }}</strong>
+      </p>
+    </div>
+  </div>
+  <div class="checkout_products_subtotal">
+    <p>
+      Subtotal ( {{ shopping_cart_services.getCartLength() }} items):
+      <strong> ₹{{ shopping_cart_services.getTotal() }}</strong>
+    </p>
+  </div>
+</div>

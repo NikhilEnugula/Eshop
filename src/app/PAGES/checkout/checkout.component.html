@@ -1,0 +1,25 @@
+<div class="checkout">
+  <div class="checkout_left">
+    <div class="checkout_empty" *ngIf="shopping_cart.getCartLength() == 0">
+      <div class="checkout_empty_image">
+        <img
+          src="https://www.webtoffee.com/wp-content/themes/webtoffee/assets/images/empty-cart.svg"
+          alt=""
+          class="checkout_image"
+        />
+      </div>
+      <h2>Your shopping basket is empty..!</h2>
+      <p>You have no items in your basket</p>
+    </div>
+    <div class="check_not_empty" *ngIf="shopping_cart.getCartLength() != 0">
+      <p><strong>Shopping Cart</strong></p>
+      <app-checkout-products
+        [checkout_products]="items"
+        (deleteEvent)="deleteEventHandler($event)"
+      ></app-checkout-products>
+    </div>
+  </div>
+  <div class="checkout_right">
+    <app-checkout-subtotal></app-checkout-subtotal>
+  </div>
+</div>

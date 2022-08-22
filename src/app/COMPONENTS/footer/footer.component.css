@@ -1,0 +1,17 @@
+.footernav {
+  background-color: #586170;
+  color: #ffff;
+  padding: 3rem;
+  display: flex;
+}
+.cointainer {
+  width: 100%;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
