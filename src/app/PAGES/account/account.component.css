@@ -1,16 +1,17 @@
 .account_page {
   width: 98%;
 }
-.row {
+/* .row {
   display: flex;
   flex-direction: column;
-}
+}*/
 .account_signin {
   border: 1px solid rgb(182, 180, 180);
   width: 250px;
   margin: 10px;
   align-items: center;
   border-radius: 4px;
+  margin-left: 100px;
 }
 .account_signin > h3 {
   font-weight: 500;
@@ -25,17 +26,98 @@
   width: 90%;
 }
 .account_form > button {
+  align-items: center;
   background-color: rgb(133, 241, 241);
   margin: 4px;
   margin-left: 70px;
+  border-radius: 4px;
+  border: 1px solid rgb(140, 140, 216);
 }
 .or {
-  width: 100px;
+  width: 50px;
+  padding-top: 50px;
+}
+.guest {
+  margin: 10px;
+  margin-top: 50px;
+  height: 100px;
+  width: 200px;
+  border: 1px solid rgb(184, 182, 182);
+  align-items: center;
+  text-align: center;
+  margin-right: 100px;
+}
+.btn_guest {
+  margin-top: 30px;
+  background-color: rgb(63, 243, 243);
+  border-radius: 4px;
+  border: 1px solid rgb(95, 95, 235);
 }
 
 .item_page {
-  border: 1px solid grey;
+  border: 1px solid rgb(226, 223, 223);
   align-items: center;
   text-align: center;
-  width: 150px;
+  width: 200px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: -100px;
+  padding-top: 20px;
+}
+.indiator > h2 {
+  margin-left: 150px;
+}
+.indiator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+  font-weight: 600;
+}
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: rgb(15, 15, 15);
+}
+.progressbar li.active:before {
+  border-color: rgb(66, 224, 106);
+}
+.progressbar li.active + li:after {
+  background-color: rgb(21, 163, 168);
 }
