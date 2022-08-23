@@ -4,6 +4,7 @@ import { AccountComponent } from './PAGES/account/account.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { DeliveryComponent } from './PAGES/delivery/delivery.component';
 import { HomeComponent } from './PAGES/home/home.component';
+import { ItemComponent } from './PAGES/item/item.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import { RegisterComponent } from './PAGES/register/register.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'account', component: AccountComponent },
   { path: 'delivery', component: DeliveryComponent },
+  { path: 'item', component: ItemComponent },
 ];
 
 @NgModule({

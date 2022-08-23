@@ -24,6 +24,7 @@ import { DeliveryComponent } from './PAGES/delivery/delivery.component';
 import { AccountComponent } from './PAGES/account/account.component';
 import { PaymentComponent } from './PAGES/payment/payment.component';
 import { CompleteComponent } from './PAGES/complete/complete.component';
+import { ItemComponent } from './PAGES/item/item.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { CompleteComponent } from './PAGES/complete/complete.component';
     AccountComponent,
     PaymentComponent,
     CompleteComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,6 @@ import { CompleteComponent } from './PAGES/complete/complete.component';
   ],
 
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, AccountComponent],
 })
 export class AppModule {}

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-6">
       <div>
         <div class="indiator">
           <ul class="progressbar">
@@ -77,4 +77,10 @@
       </div>
     </div>
   </div>
+</div>
+<div class="subtotal2" *ngIf="shipping.getCartLength() > 0">
+  <p>Number of items: {{ shipping.getCartLength() }}</p>
+  <p>
+    Total Price:<strong>₹{{ shipping.getTotal() }}</strong>
+  </p>
 </div>
