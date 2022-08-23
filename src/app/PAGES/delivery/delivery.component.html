@@ -1,86 +1,43 @@
-<div class="container">
+<div class="shipping_page">
+  <div class="indiator">
+    <ul class="progressbar">
+      <li class="active">Accounts</li>
+      <li class="active">Shipping</li>
+      <li>Payment</li>
+      <li>Complete</li>
+    </ul>
+    <h1>Enter your delivery address details</h1>
+  </div>
+
   <div class="row">
-    <div class="col-md-6">
-      <div>
-        <div class="indiator">
-          <ul class="progressbar">
-            <li class="active">Accounts</li>
-            <li class="active">Shipping</li>
-            <li>Payment</li>
-            <li>Complete</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 shipping_form_to">
-          <h3><strong> Shipping Address </strong></h3>
-          <form action="" class="shipping_form">
-            <input
-              type="text"
-              formControlName="name"
-              placeholder=" Full Name"
-            />
-            <br />
-
-            <input
-              type="number"
-              formControlName="mobile"
-              placeholder="Mobile Number"
-            />
-            <br />
-            <input
-              type="number"
-              formControlName="pincode"
-              placeholder="Pincode"
-            />
-            <br />
-            <input
-              type="text"
-              formControlName="houseno"
-              placeholder=" Flat,House no.,company,Apartment"
-            />
-            <br />
-            <input
-              type="text"
-              formControlName="area"
-              placeholder="Area,Street,Sector,Village"
-            />
-            <br />
-            <input
-              type="text"
-              formControlName="landmark"
-              placeholder="Landmark"
-            />
-            <br />
-            <input
-              type="text"
-              formControlName="email"
-              placeholder="Town/City"
-            />
-            <br />
-            <input type="text" formControlName="State" placeholder="State" />
-            <br />
-
-            <button class="shipping_create_button" routerLink="">Next</button>
-          </form>
-        </div>
+    <div class="col-8">
+      <div class="shipping_form">
+        <h2>Shipping Address</h2>
+        <form action="" class="form_div">
+          <input type="text" placeholder="Full Name" />
+          <br />
+          <input type="text" placeholder="Mobile Number" />
+          <br />
+          <input type="text" placeholder="Pincode" />
+          <br />
+          <input type="text" placeholder="Flat,House no.,Company,Apartment" />
+          <br />
+          <input type="text" placeholder="Area,Street,Sector,Village" />
+          <br />
+          <input type="text" placeholder="Landmark" />
+          <br />
+          <input type="text" placeholder="Town/City" />
+          <br />
+          <input type="text" placeholder="State" />
+          <br />
+          <button routerLink="/payment">Submit</button>
+        </form>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="row">
-        <div class="subtotal2" *ngIf="shipping.getCartLength() > 0">
-          <p>Number of items: {{ shipping.getCartLength() }}</p>
-          <p>
-            Total Price:<strong>₹{{ shipping.getTotal() }}</strong>
-          </p>
-        </div>
+    <div class="col-4">
+      <div class="item_com">
+        <app-item></app-item>
       </div>
     </div>
   </div>
-</div>
-<div class="subtotal2" *ngIf="shipping.getCartLength() > 0">
-  <p>Number of items: {{ shipping.getCartLength() }}</p>
-  <p>
-    Total Price:<strong>₹{{ shipping.getTotal() }}</strong>
-  </p>
 </div>

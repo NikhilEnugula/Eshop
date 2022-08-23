@@ -1,1 +1,90 @@
-<p>payment works!</p>
+<div class="payment_page">
+  <div class="row">
+    <div class="col-8">
+      <h3>Payment Mode</h3>
+      <div>
+        <input type="radio" (click)="pod()" /> &nbsp;<label for=""
+          >Pay On Delivery</label
+        >
+        <br />
+        <input type="radio" (click)="ccdc()" /> &nbsp;<label for=""
+          >Debit/Credit Card</label
+        >
+        <br />
+        <input type="radio" (click)="upi()" /> &nbsp;<label for=""
+          >Upi Payment</label
+        >
+      </div>
+      <div class="payon_delivery" *ngIf="pod_option">
+        <div class="pod_btn">
+          <button>Proceed</button>
+        </div>
+      </div>
+      <div class="upipay" *ngIf="uip_option">
+        <div class="payment-box">
+          <h1 class="pay-h">Card Details</h1>
+
+          <form class="form" action="no.php">
+            <label for="Card Number">Card Number</label>
+
+            <input
+              class="cc-number icon"
+              maxlength="16"
+              name="card-number"
+              pattern="\d*"
+              required
+              placeholder="XXXX XXXX XXXX"
+              type="tel"
+            />
+
+            <label for="Expiry Date">Expiry Date</label>
+            <input
+              class="expiry-month icon"
+              type="tel"
+              maxlength="2"
+              name="expiry-month"
+              pattern="\d*"
+              required
+              placeholder="01"
+            />
+            <input
+              class="expiry-year icon"
+              type="tel"
+              maxlength="4"
+              name="expiry-year"
+              pattern="\d*"
+              required
+              placeholder="0000"
+            />
+
+            <label for="CVV">CVV</label>
+            <input
+              class="cvv icon"
+              type="tel"
+              maxlength="3"
+              name="cvv"
+              pattern="\d*"
+              required
+              placeholder="XXX"
+            />
+
+            <input
+              class="card-holder icon"
+              type="text"
+              placeholder="Cardholder Name"
+            />
+
+            <button class="pay-now" type="submit">
+              <img src="https://bit.ly/3Q8KZcM" alt="" class="pay_icon" />
+              <span class="pay_text">Pay Now</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="upi_payment" ngIf="upi_option"></div>
+    </div>
+    <div class="col-4">
+      <app-item></app-item>
+    </div>
+  </div>
+</div>

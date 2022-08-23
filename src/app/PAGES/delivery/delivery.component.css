@@ -1,4 +1,95 @@
-.shipping_form_to {
+.item_com {
+  border: 2px solid rgb(226, 223, 223);
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: -100px;
+  padding-top: 30px;
+  border-radius: 4px;
+}
+.indiator > h1 {
+  font-family: cursive;
+  margin-left: 100px;
+}
+.shipping_form {
+  width: 400px;
+  border: 2px solid rgb(172, 171, 171);
+  margin: 20px;
+  margin-left: 100px;
+}
+.shipping_form > h2 {
+  margin: 5px;
+  margin-left: 10px;
+}
+.form_div > input {
+  width: 95%;
+  margin: 4px;
+}
+.form_div > button {
+  background-color: rgb(119, 195, 247);
+  margin: 5px;
+  width: 100px;
+  border-radius: 4px;
+  margin-left: 140px;
+}
+.indiator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+  font-weight: 600;
+}
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: rgb(15, 15, 15);
+}
+.progressbar li.active:before {
+  border-color: rgb(66, 224, 106);
+}
+.progressbar li.active + li:after {
+  background-color: rgb(21, 163, 168);
+}
+
+/* .shipping_form_to {
   border: solid 1px gray;
   margin: 1%;
   border-radius: 4px;
@@ -78,4 +169,4 @@
 }
 .progressbar li.active + li:after {
   background-color: rgb(39, 226, 233);
-}
+} */
