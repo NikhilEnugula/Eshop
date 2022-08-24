@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+// import { FormBuilder, FormGroup } from '@angular/forms';
 import { AuthService } from 'src/app/SERVICES/auth.service';
 
 @Component({
@@ -8,26 +8,25 @@ import { AuthService } from 'src/app/SERVICES/auth.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  LoginForm: FormGroup;
-
-  constructor(private fb: FormBuilder, private auth: AuthService) {}
+  constructor(private auth: AuthService) {}
+  LoginForm: any;
 
   ngOnInit(): void {
-    this.CreateForm();
+    // this.CreateForm();
   }
-  CreateForm() {
-    this.LoginForm = this.fb.group({
-      email: [''],
-      password: [''],
-    });
-  }
-  SignIn() {
-    console.log(
-      'values',
-      this.LoginForm.value.email,
-      'password',
-      this.LoginForm.value.password
-    );
-  }
+  // CreateForm() {
+  //   this.LoginForm = this.fb.group({
+  //     email: [''],
+  //     password: [''],
+  //   });
+  // }
+  // SignIn() {
+  //   console.log(
+  //     'values',
+  //     this.LoginForm.value.email,
+  //     'password',
+  //     this.LoginForm.value.password
+  //   );
+  // }
   CreateAccount() {}
 }
