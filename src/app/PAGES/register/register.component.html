@@ -3,26 +3,24 @@
     <h1 class="register_logo">E-Shop</h1>
     <div class="register_form">
       <h1>Register</h1>
-      <form action="">
+      <form action="" [formGroup]="register" (ngSubmit)="(submitData)">
         <h5>Your Name</h5>
-        <input type="text" formControlName="email" />
+        <input type="text" formControlName="Name" />
         <h5>Mobile Number</h5>
-        <input type="email" formControlName="email" />
+        <input type="number" formControlName="Mobile" />
         <h5>Email</h5>
-        <input type="email" formControlName="email" />
+        <input type="text" formControlName="Email" />
         <h5>Password</h5>
         <input
-          type="password"
-          formControlName="password"
+          type="text"
+          formControlName="Password"
           placeholder="must be 6 characters"
         />
         <p class="register_terms">
           By continuing, you agree to e-Shop's conditions of Use and Privacy
           Notice
         </p>
-        <button class="register_signIn_button" routingLink="/home">
-          Create E-shop Account
-        </button>
+        <button class="register_signIn_button">Create E-shop Account</button>
       </form>
     </div>
   </div>

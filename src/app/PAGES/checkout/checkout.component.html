@@ -12,19 +12,16 @@
       <p>You have no items in your basket</p>
     </div>
     <div class="check_not_empty" *ngIf="shopping_cart.getCartLength() != 0">
-      <p><strong>Shopping Cart</strong></p>
-      <app-checkout-products
-        [checkout_products]="items"
-        (deleteEvent)="deleteEventHandler($event)"
-      ></app-checkout-products>
+      <div class="cart">
+        <p><strong>Shopping Cart</strong></p>
+        <app-checkout-products
+          [checkout_products]="items"
+          (deleteEvent)="deleteEventHandler($event)"
+        ></app-checkout-products>
+      </div>
     </div>
   </div>
   <div class="checkout_right">
     <app-checkout-subtotal></app-checkout-subtotal>
-    <div>
-      <button routerLink="/account" class="checkout_button">
-        Proceed to checkout
-      </button>
-    </div>
   </div>
 </div>

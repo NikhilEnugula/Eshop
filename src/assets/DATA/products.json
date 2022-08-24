@@ -1,45 +1,45 @@
 [
-    {
-        "id":1,
-        "title":"Sony Bravia",
-        "desc":"Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74K (Black)",
-        "price":63990,
-        "image":"https://m.media-amazon.com/images/I/71ZKGDdz1lL._SL1500_.jpg"
-    },
-    {
-        "id":2,
-        "title":"Redmi K50i 5G",
-        "desc":"Redmi K50i 5G (Quick Silver, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display | Alexa Built-in",
-        "price":25999,
-        "image":"https://m.media-amazon.com/images/I/71iaqy+yM2L._SX679_.jpg"
-    },
-    {
-        "id":3,
-        "title":"Apple iPhone 13 Pro Max ",
-        "desc":"Apple iPhone 13 Pro Max (128GB) - Sierra Blue",
-        "price":118900,
-        "image":"https://m.media-amazon.com/images/I/61i8Vjb17SL._SL1500_.jpg"
-    },
-   
-    {
-        "id":4,
-        "title":"Apple MacBook Pro",
-        "desc":"Apple MacBook Pro Laptop with M2 chip: 33.74 cm (13.3-inch) Retina Display, 8GB RAM, 256GB SSD ​​​​​​​Storage, Touch Bar, Backlit Keyboard, FaceTime HD Camera; Silver ",
-        "price":124990,
-        "image":"https://m.media-amazon.com/images/I/61bX2AoGj2L._SL1500_.jpg"
-    },
-    {
-        "id":5,
-        "title":"Apple AirPods",
-        "desc":"New Apple AirPods (3rd Generation)",
-        "price": 17490,
-        "image":"https://m.media-amazon.com/images/I/615ekapl+pL._SL1500_.jpg"
-    },
-    {
-        "id":6,
-        "title":" Sennheiser CX 300s",
-        "desc":" Sennheiser CX 300s Wired in Ear Earphones with Mic (Black)",
-        "price":2990,
-        "image":"https://m.media-amazon.com/images/I/41G7HqL6Q+L._SL1422_.jpg"
-    }
+  {
+    "id": 1,
+    "title": "Sony Bravia",
+    "desc": "Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74K (Black)",
+    "price": 63990.0,
+    "image": "https://m.media-amazon.com/images/I/71ZKGDdz1lL._SL1500_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Redmi K50i 5G",
+    "desc": "Redmi K50i 5G (Quick Silver, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display | Alexa Built-in",
+    "price": 25999.0,
+    "image": "https://m.media-amazon.com/images/I/71iaqy+yM2L._SX679_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Apple iPhone 13 Pro Max ",
+    "desc": "Apple iPhone 13 Pro Max (128GB) - Sierra Blue",
+    "price": 118900.0,
+    "image": "https://m.media-amazon.com/images/I/61i8Vjb17SL._SL1500_.jpg"
+  },
+
+  {
+    "id": 4,
+    "title": "Apple MacBook Pro",
+    "desc": "M2 chip: 33.74 cm (13.3-inch) Retina Display, 8GB RAM, 256GB SSD ​​​​​​​Storage, Backlit Keyboard, ; Silver ",
+    "price": 124990.0,
+    "image": "https://m.media-amazon.com/images/I/61bX2AoGj2L._SL1500_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Apple AirPods",
+    "desc": "New Apple AirPods (3rd Generation)",
+    "price": 17490.0,
+    "image": "https://m.media-amazon.com/images/I/615ekapl+pL._SL1500_.jpg"
+  },
+  {
+    "id": 6,
+    "title": " Sennheiser CX 300s",
+    "desc": " Sennheiser CX 300s Wired in Ear Earphones with Mic (Black)",
+    "price": 2990.0,
+    "image": "https://m.media-amazon.com/images/I/41G7HqL6Q+L._SL1422_.jpg"
+  }
 ]

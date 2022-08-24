@@ -3,10 +3,10 @@
     Subtotal: ({{ shoppingCart.getCartLength() }} items)
     <strong>₹{{ shoppingCart.getTotal() }}</strong>
   </p>
-  <br />
 
-  <div class="subtotal_gift">
-    <!-- <input type="checkbox" />
-    <p>This order contains a gift</p> -->
+  <div>
+    <button routerLink="/account" class="checkout_button">
+      Proceed to checkout
+    </button>
   </div>
 </div>

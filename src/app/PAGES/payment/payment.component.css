@@ -1,210 +1,182 @@
-.payment-box {
-  max-width: 500px;
-  padding: 0.5em 0.8em 1em 0.8em;
+.payment_mod {
+  border: 2px solid whitesmoke;
+  width: 600px;
+  margin: 10px;
+  margin-left: 100px;
 }
-
-.pay-h {
-  font-size: var(--heading);
-  text-align: center;
-  margin-bottom: 0.6em;
+.payment_mod > h2 {
+  font-family: cursive;
+  margin-left: 90px;
 }
-
-form label {
-  display: block;
-  font-size: var(--text);
-  margin-bottom: 0.4em;
+.payment_options {
+  width: 500px;
+  align-items: center;
+  margin-left: 45px;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
-
-form input {
-  font-family: "Sen", sans-serif;
-  font-weight: 600;
-  font-size: var(--s_text);
-  padding: 0.4em 0.3em;
-  margin-left: 0.6em;
-  outline: none;
-  letter-spacing: 0.3em;
-  margin-bottom: 0.7em;
+.payment_options > button {
+  margin: 10px 0px 0px 50px;
+  background-color: #72d4f5;
+  border-radius: 4px;
 }
-
-input::placeholder {
-  font-weight: 100;
-
-  color: rgb(179, 179, 179);
-  padding-left: 30px;
+.pod_btn {
+  margin: 10px 0px 10px 150px;
 }
-
-.cc-number {
-  background: url(https://bit.ly/3QaanyT) no-repeat;
-  width: 90%;
+.pod_btn > button {
+  background-color: #4caf50;
+  border-color: rgb(39, 138, 64);
+  border-radius: 4px;
 }
-
-.expiry-month {
-  background: url(https://bit.ly/3zK1dn6) no-repeat;
+.card_pay {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  padding: 15px;
+  padding-left: 20px;
+  margin-left: 50px;
+}
+.card_pay > input {
+  margin: 4px;
+}
+.card_pay > label {
+  margin: 4px;
+}
+.card_no {
+  width: 60%;
+}
+.expire_d {
   width: 20%;
 }
-
-.expiry-year {
-  background: url(https://bit.ly/3oIcwG8) no-repeat;
-  width: 30%;
+.cvv_n {
+  width: 20%;
+}
+.cvv_l {
+  margin-left: 60px;
+}
+.card_na {
+  width: 54%;
+}
+.card_btm_otp {
+  margin: 5px 0px 5px 170px;
+  border-radius: 4px;
+  background-color: #f44336;
+  background-color: #db2b1f;
+}
+.card_otp_btn_con {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  padding: 15px;
+  padding-left: 20px;
+  margin-left: 50px;
+  text-align: center;
+}
+.card_otp_btn_con > input {
+  margin: 5px;
+}
+.card_otp_btn_con > button {
+  background-color: #4caf50;
+  border-color: rgb(39, 138, 64);
+  margin: 5px;
+  border-radius: 4px;
+}
+.upipay {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  padding: 15px;
+  padding-left: 20px;
+  margin-left: 50px;
+  text-align: center;
+}
+.upipay > input {
+  margin: 5px;
+}
+.upipay > button {
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #f44336;
+  background-color: #db2b1f;
 }
 
-.cvv {
-  background: url(https://bit.ly/3PJ0qse) no-repeat;
-  width: 25%;
+.upi_otp {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  padding: 15px;
+  padding-left: 20px;
+  margin-left: 50px;
+  text-align: center;
+}
+.upi_otp > input {
+  margin: 5px;
+}
+.upi_otp > button {
+  background-color: #4caf50;
+  margin: 5px;
+  border-radius: 4px;
+  border-color: rgb(39, 138, 64);
+}
+.payment_item {
+  text-align: center;
+  border: solid 2px whitesmoke;
+  height: 150px;
+  width: 350px;
+  margin: -100px 0px 0px 50px;
+  padding: 20px;
+}
+.indiator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
-.card-holder {
-  background: url(https://bit.ly/3oJUPG8) no-repeat;
-  width: 90%;
+.progressbar {
+  counter-reset: step;
 }
-
-.icon {
-  background-position: 0.4em 0.2em;
-  background-size: 25px;
-  padding-left: 3em;
-
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.pay-now {
-  display: block;
-  margin: 0.6em auto;
-  width: 60%;
-  padding: 0.5em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.pay_text {
-  font-size: var(--s_text);
-  vertical-align: middle;
-}
-
-.pay_icon {
-  width: 20px;
-  margin-right: 1em;
-  vertical-align: middle;
-}
-
-.pay_icon:hover,
-.pay-icon:focus {
-  filter: invert(100%);
-}
-
-.pay-now:hover,
-.pay-now:focus {
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  text-align: center;
   cursor: pointer;
-  background-color: #093e5f;
-  color: rgb(255, 255, 255);
 }
-
-/* For  smaller mobile device  */
-
-@media (min-width: 100px) and (max-width: 250px) {
-  :root {
-    /* Font Size */
-
-    --heading: 1.8rem;
-    --s_head: 1.5rem;
-    --text: 1rem;
-    --s_text: 0.7rem;
-  }
-
-  .center {
-    margin: 1em;
-  }
-
-  .payment-box {
-    max-width: 230px;
-  }
-
-  form input {
-    letter-spacing: 0.1em;
-  }
-
-  .expiry-month {
-    width: 30%;
-  }
-
-  .expiry-year {
-    width: 40%;
-  }
-
-  .cvv {
-    width: 40%;
-  }
-
-  .icon {
-    background-position: 0.4em;
-    background-size: 10px;
-    padding-left: 2em;
-  }
-
-  .pay_icon {
-    width: 10px;
-  }
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+  font-weight: 600;
 }
-
-/* For mobile device  */
-@media (min-width: 251px) and (max-width: 450px) {
-  :root {
-    /* Font Size */
-
-    --heading: 2.4rem;
-    --s_head: 2rem;
-    --text: 1.2rem;
-    --s_text: 1rem;
-  }
-
-  .payment-box {
-    max-width: 350px;
-  }
-
-  form input {
-    letter-spacing: 0.3em;
-  }
-
-  .icon {
-    background-position: 0.4em;
-    background-size: 15px;
-    padding-left: 2em;
-  }
-
-  .expiry-month {
-    width: 28%;
-  }
-
-  .expiry-year {
-    width: 40%;
-  }
-  .cvv {
-    width: 40%;
-  }
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
 }
-
-/* For 4k & Full HD+  */
-
-@media (min-width: 1921px) {
-  :root {
-    /* Font Size */
-
-    --heading: 6rem;
-    --s_head: 3rem;
-    --text: 2.5rem;
-    --s_text: 2.2rem;
-  }
-
-  .payment-box {
-    max-width: 1500px;
-  }
-
-  .icon {
-    background-size: 50px;
-  }
-
-  .pay_icon {
-    width: 50px;
-  }
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: rgb(15, 15, 15);
+}
+.progressbar li.active:before {
+  border-color: rgb(66, 224, 106);
+}
+.progressbar li.active + li:after {
+  background-color: rgb(21, 163, 168);
+}
+.indiator > h1 {
+  font-family: cursive;
+  margin: 10px 0px 10px 100px;
 }

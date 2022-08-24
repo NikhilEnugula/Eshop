@@ -37,3 +37,11 @@
   color: rgb(250, 248, 248);
   border-color: #51c6e4 #067179 #06468f;
 }
+.checkout_button {
+  background-color: rgb(108, 243, 243);
+  padding-left: 10px;
+  margin-left: 60px;
+  border-radius: 4px;
+  margin-top: -50;
+  border-color: #51c6e4;
+}

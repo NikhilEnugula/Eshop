@@ -18,7 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './COMPONENTS/products/products.component';
 import { CheckoutSubtotalComponent } from './COMPONENTS/checkout-subtotal/checkout-subtotal.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './PAGES/register/register.component';
 import { DeliveryComponent } from './PAGES/delivery/delivery.component';
 import { AccountComponent } from './PAGES/account/account.component';
@@ -55,7 +54,6 @@ import { ItemComponent } from './PAGES/item/item.component';
     MatSliderModule,
     MatCardModule,
     HttpClientModule,
-    ReactiveFormsModule,
   ],
 
   providers: [],
