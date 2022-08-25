@@ -69,3 +69,7 @@
   border-color: rgb(39, 138, 64);
   background-color: rgb(67, 202, 101);
 }
+.sd {
+  align-items: center;
+  text-align: center;
+}

@@ -24,6 +24,7 @@ import { AccountComponent } from './PAGES/account/account.component';
 import { PaymentComponent } from './PAGES/payment/payment.component';
 import { CompleteComponent } from './PAGES/complete/complete.component';
 import { ItemComponent } from './PAGES/item/item.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,8 @@ import { ItemComponent } from './PAGES/item/item.component';
     MatSliderModule,
     MatCardModule,
     HttpClientModule,
+
+    ReactiveFormsModule,
   ],
 
   providers: [],

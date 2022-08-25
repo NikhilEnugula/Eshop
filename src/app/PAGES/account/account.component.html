@@ -13,13 +13,25 @@
     <div class="col-4">
       <div class="account_signin">
         <h3>SignIn</h3>
-        <form action="" class="account_form">
+        <form
+          action=""
+          class="account_form"
+          [formGroup]="userForm"
+          novalidate
+          (ngSubmit)="submitData()"
+        >
           <h5>Email</h5>
-          <input type="email" />
+          <input type="email" formControlName="userEmail" required />
           <h5>Password</h5>
-          <input type="text" />
+          <input type="password" formControlName="userPassword" required />
           <br />
-          <button routerLink="/delivery">Login</button>
+          <button
+            [disabled]="userForm.invalid"
+            type="submit"
+            routerLink="/delivery"
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>
